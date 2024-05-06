@@ -16,7 +16,7 @@ Add Macros to the Foundry VTT sidebar!
 
 **Recommended:** in the Foundry's setup screen, search Module list for `Sidebar Macro` and click `Install`
 
-*Alternative:* in the setup screen, use the URL `https://github.com/arcanistzed/Foundry-Workshop/sidebar-macros/latest/download/module.json` to install the module.
+*Alternative:* in the setup screen, use the URL `https://github.com/Foundry-Workshop/sidebar-macros/releases/latest/download/module.json` to install the module.
 
 ## Support
 
