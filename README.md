@@ -34,7 +34,7 @@ If you wish to contact me for any reason, join [my Discord](https://discord.gg/X
 
 ## License
 
-Copyright © 2021 arcanist
+Copyright © 2021 arcanist  
 Copyright © 2024 Forien
 
 Macro Sidebar is a module for Foundry VTT by arcanist and is licensed under a [MIT License](LICENSE).
