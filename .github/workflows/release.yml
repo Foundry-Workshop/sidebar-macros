@@ -37,9 +37,10 @@ jobs:
 
       - name: Zip files
         run: |
+          zip -r module.zip module.json CHANGELOG.md README.md LICENSE icons/ languages/ modules/ packs/ scripts/ styles/ templates/
 #          cp CHANGELOG.md README.md LICENSE dist/
 #          cd dist/
-          zip -r module.zip module.json CHANGELOG.md README.md LICENSE icons/ languages/ modules/ packs/ scripts/ styles/ templates/ 
+#          zip -r module.zip module.json CHANGELOG.md README.md LICENSE icons/ languages/ modules/ packs/ scripts/ styles/ templates/
 
       - name: Update Release with Files
         id: create_version_release
