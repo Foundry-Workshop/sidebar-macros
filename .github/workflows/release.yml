@@ -25,7 +25,7 @@ jobs:
         id: sub_manifest_link_version
         uses: microsoft/variable-substitution@v1
         with:
-          files: './dist/module.json'
+          files: './module.json'
         env:
           version: ${{steps.get_version.outputs.version-without-v}}
           url: https://github.com/${{github.repository}}
@@ -38,9 +38,6 @@ jobs:
       - name: Zip files
         run: |
           zip -r module.zip module.json CHANGELOG.md README.md LICENSE icons/ languages/ modules/ packs/ scripts/ styles/ templates/
-#          cp CHANGELOG.md README.md LICENSE dist/
-#          cd dist/
-#          zip -r module.zip module.json CHANGELOG.md README.md LICENSE icons/ languages/ modules/ packs/ scripts/ styles/ templates/
 
       - name: Update Release with Files
         id: create_version_release
@@ -49,28 +46,28 @@ jobs:
           allowUpdates: true
           name: Release ${{steps.get_version.outputs.version}}
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './dist/module.json, ./dist/module.zip'
+          artifacts: './module.json, ./module.zip'
           tag: ${{ github.ref }}
 
       - name: Get Module ID
         id: moduleID
         uses: notiz-dev/github-action-json-property@release
         with:
-          path: './dist/module.json'
+          path: './module.json'
           prop_path: 'id'
 
       - name: Get mininum
         id: minimum
         uses: notiz-dev/github-action-json-property@release
         with:
-          path: './dist/module.json'
+          path: './module.json'
           prop_path: 'compatibility.minimum'
 
       - name: Get verified
         id: verified
         uses: notiz-dev/github-action-json-property@release
         with:
-          path: './dist/module.json'
+          path: './module.json'
           prop_path: 'compatibility.verified'
 
       - name: Foundry Release API
