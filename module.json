@@ -4,6 +4,12 @@
 	"description": "Add Macros to the Foundry VTT sidebar!",
 	"authors": [
 		{
+			"name": "Forien",
+			"url": "https://www.patreon.com/foundryworkshop",
+			"email": "mr.forien@gmail.com",
+			"discord": "forien"
+		},
+		{
 			"name": "Arcanist",
 			"url": "https://arcanist.me",
 			"email": "arcanistzed@gmail.com",
@@ -12,10 +18,10 @@
 		}
 	],
 	"url": "This is auto replaced",
-	"license": "https://github.com/arcanistzed/sidebar-macros/blob/main/LICENSE",
-	"readme": "https://github.com/arcanistzed/sidebar-macros/blob/main/README.md",
-	"bugs": "https://github.com/arcanistzed/sidebar-macros/issues/new/choose",
-	"changelog": "https://github.com/arcanistzed/sidebar-macros/blob/main/CHANGELOG.md",
+	"license": "<<autoreplaced>>",
+	"readme": "<<autoreplaced>>",
+	"bugs": "<<autoreplaced>>",
+	"changelog": "<<autoreplaced>>",
 	"flags": {
 		"allowBugReporter": true
 	},
