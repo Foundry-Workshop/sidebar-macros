@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 - 6 May 2024
+* Updated module to Foundry v11
+* Fixed being unable to open Macro Directory as Pop Up, which caused sidebar duplication ([#22](https://github.com/arcanistzed/sidebar-macros/issues/22))
+* Moved from _deprecated_ `SidebarDirectory` class to `DocumentDirectory` class
+* Removed needless getters and other practically useless code
+* Removed legacy support (since we are moving away from deprecated class anyway)
+  * Users of older Foundry versions should install older version of this module and `Lock` it on the `Setup` screen. 
+
 ## 0.8.3 - 31 Oct 2022
 
 * Migrate manifest to v10
