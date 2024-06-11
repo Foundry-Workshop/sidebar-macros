@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2 - 11 June 2024
+* Verified module working on Foundry v12
+
 ## 1.0.0 - 6 May 2024
 * Updated module to Foundry v11
 * Fixed being unable to open Macro Directory as Pop Up, which caused sidebar duplication ([#22](https://github.com/arcanistzed/sidebar-macros/issues/22))
